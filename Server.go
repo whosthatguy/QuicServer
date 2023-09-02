@@ -18,12 +18,8 @@ import (
 	"net"
 	//"net/http"
 
-	//"net/http"
-	//"time"
-
 	"github.com/quic-go/quic-go"
 	//"github.com/quic-go/quic-go/x509"
-	//"github.com/quic-go/quic-go/http3"
 	//"github.com/quic-go/quic-go/http3"
 )
 
