@@ -314,7 +314,7 @@ func handleServerStream(sess quic.Connection, stream quic.Stream) {
 
 func getLlCertificates() tls.Certificate {
 	//load your certificates and keys
-	cert, err := tls.LoadX509KeyPair("C:/Users/karso/Code/Learning/TLSKeys/cert.pem", "C:/Users/karso/Code/Learning/TLSKeys/key_without_passphrase.pem")
+	cert, err := tls.LoadX509KeyPair("TLSKeys/cert.pem", "TLSKeys/key_without_passphrase.pem")
 	if err != nil {
 		log.Fatal(err)
 	}
