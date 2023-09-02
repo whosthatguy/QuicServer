@@ -36,7 +36,7 @@ type ServerState int
 
 const (
 	broadcastAddress              = "127.0.0.1"
-	broadcastPort                 = 4243
+	broadcastPort                 = #
 	broadcastInterval             = 1 * time.Second
 	serverIdentifier              = "QUIC SERVER AVAILABLE:"
 	Idle              ServerState = iota
@@ -53,7 +53,7 @@ func StartServer() {
 	}
 
 	// Setup the server with an address and certificate
-	listener, err := quic.ListenAddr("127.0.0.1:4242", generateTlsConfig(), serverConfig)
+	listener, err := quic.ListenAddr("127.0.0.1:#", generateTlsConfig(), serverConfig)
 	if err != nil {
 		log.Fatal(err)
 	}
